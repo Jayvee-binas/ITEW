@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PESO Cabuyao City</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PESO Cabuyao</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="job-listings.html">Job Listings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Form -->
+    <main class="py-5 mt-5" style="background: linear-gradient(135deg, #f3f4f6 0%, #fff 100%);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="card shadow-lg" style="border-radius: 1.5rem; overflow: hidden;">
+                        <div class="card-body p-5">
+                            <!-- Logo or Brand -->
+                            <div class="text-center mb-4">
+                                <div class="bg-primary p-3 d-inline-block rounded-circle mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-person" viewBox="0 0 16 16">
+                                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                    </svg>
+                                </div>
+                            <h2 class="text-center mb-4">Login to Your Account</h2>
+                            <form>
+                                <div class="mb-4">
+                                    <div class="position-relative">
+                                        <input type="text" class="form-control form-control-lg bg-light border-0" 
+                                               id="username" required placeholder="Username or Email"
+                                               style="padding-left: 3rem;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+                                             class="bi bi-envelope position-absolute" viewBox="0 0 16 16"
+                                             style="left: 1rem; top: 50%; transform: translateY(-50%); color: #6b7280;">
+                                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="position-relative">
+                                        <input type="password" class="form-control form-control-lg bg-light border-0" 
+                                               id="password" required placeholder="Password"
+                                               style="padding-left: 3rem;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+                                             class="bi bi-lock position-absolute" viewBox="0 0 16 16"
+                                             style="left: 1rem; top: 50%; transform: translateY(-50%); color: #6b7280;">
+                                            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex justify-content-end mt-2">
+                                        <a href="#" class="text-decoration-none small text-primary">Forgot Password?</a>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rememberMe">
+                                        <label class="form-check-label text-muted" for="rememberMe">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 py-3 fw-bold"
+                                        style="background: linear-gradient(135deg, #2563eb, #3b82f6);">
+                                    Sign In
+                                </button>
+                            </form>
+
+                            <div class="text-center mt-4">
+                                <p class="mb-0">Don't have an account? <a href="register.html">Register here</a></p>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <div class="text-center">
+                                <div class="position-relative my-4">
+                                    <hr class="text-muted">
+                                    <p class="small position-absolute top-50 start-50 translate-middle bg-white px-3 text-muted">Or continue with</p>
+                                </div>
+                                <div class="d-flex justify-content-center gap-3 mb-4">
+                                    <button class="btn btn-light p-3 d-flex align-items-center justify-content-center" 
+                                            style="width: 48%; border-radius: 0.75rem; border: 1px solid #e5e7eb; transition: all 0.2s;">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" 
+                                             alt="Google" height="24">
+                                    </button>
+                                    <button class="btn btn-light p-3 d-flex align-items-center justify-content-center" 
+                                            style="width: 48%; border-radius: 0.75rem; border: 1px solid #e5e7eb; transition: all 0.2s;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1877f2" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Us</h5>
+                    <p>Email: peso@cabuyao.gov.ph<br>
+                    Phone: (123) 456-7890</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2025 PESO Cabuyao. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

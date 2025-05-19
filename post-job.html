@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job - PESO Cabuyao City</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PESO Cabuyao</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="job-listings.html">Job Listings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Post Job Header -->
+    <header class="bg-light py-5">
+        <div class="container">
+            <h1 class="display-4">Post a Job</h1>
+            <p class="lead">Find the right talent for your organization</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Job Posting Form -->
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title mb-4">Job Details</h2>
+                            <form>
+                                <!-- Company Information -->
+                                <div class="mb-4">
+                                    <h4>Company Information</h4>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="companyName" class="form-label">Company Name</label>
+                                            <input type="text" class="form-control" id="companyName" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="industry" class="form-label">Industry</label>
+                                            <select class="form-select" id="industry" required>
+                                                <option value="">Select Industry</option>
+                                                <option>Manufacturing</option>
+                                                <option>IT & Technology</option>
+                                                <option>Healthcare</option>
+                                                <option>Education</option>
+                                                <option>Service Industry</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="companyDescription" class="form-label">Company Description</label>
+                                        <textarea class="form-control" id="companyDescription" rows="3" required></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- Position Details -->
+                                <div class="mb-4">
+                                    <h4>Position Details</h4>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="jobTitle" class="form-label">Job Title</label>
+                                            <input type="text" class="form-control" id="jobTitle" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="employmentType" class="form-label">Employment Type</label>
+                                            <select class="form-select" id="employmentType" required>
+                                                <option value="">Select Type</option>
+                                                <option>Full-time</option>
+                                                <option>Part-time</option>
+                                                <option>Contract</option>
+                                                <option>Internship</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="location" class="form-label">Location</label>
+                                            <input type="text" class="form-control" id="location" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="salary" class="form-label">Salary Range</label>
+                                            <input type="text" class="form-control" id="salary" placeholder="e.g., ₱20,000 - ₱25,000">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="jobDescription" class="form-label">Job Description</label>
+                                        <textarea class="form-control" id="jobDescription" rows="5" required></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- Requirements -->
+                                <div class="mb-4">
+                                    <h4>Requirements</h4>
+                                    <div class="mb-3">
+                                        <label for="qualifications" class="form-label">Qualifications</label>
+                                        <textarea class="form-control" id="qualifications" rows="4" required></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="requirements" class="form-label">Requirements</label>
+                                        <textarea class="form-control" id="requirements" rows="4" required></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- Contact Information -->
+                                <div class="mb-4">
+                                    <h4>Contact Information</h4>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="contactPerson" class="form-label">Contact Person</label>
+                                            <input type="text" class="form-control" id="contactPerson" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="contactEmail" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="contactEmail" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="contactPhone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="contactPhone" required>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-lg">Post Job</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Posting Guidelines -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">Posting Guidelines</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">✓ Be specific with job requirements</li>
+                                <li class="mb-2">✓ Include complete company information</li>
+                                <li class="mb-2">✓ Provide accurate salary information</li>
+                                <li class="mb-2">✓ Detail job responsibilities clearly</li>
+                                <li class="mb-2">✓ Specify required qualifications</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact Support -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Need Help?</h4>
+                            <p>Contact our support team for assistance with job posting:</p>
+                            <p>
+                                <strong>Email:</strong> support@peso-cabuyao.gov.ph<br>
+                                <strong>Phone:</strong> (123) 456-7890<br>
+                                <strong>Hours:</strong> Monday-Friday, 8AM-5PM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Us</h5>
+                    <p>Email: peso@cabuyao.gov.ph<br>
+                    Phone: (123) 456-7890</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2025 PESO Cabuyao. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

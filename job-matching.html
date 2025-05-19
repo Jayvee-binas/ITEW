@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Matching - PESO Cabuyao City</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PESO Cabuyao</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="job-listings.html">Job Listings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Job Matching Header -->
+    <header class="bg-light py-5">
+        <div class="container">
+            <h1 class="display-4">Job Matching Service</h1>
+            <p class="lead">Find the perfect job match based on your skills and preferences</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-5">
+        <div class="container">
+            <!-- Profile Creation -->
+            <section class="mb-5">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title mb-4">Create Your Profile</h2>
+                                <form>
+                                    <!-- Personal Information -->
+                                    <div class="mb-4">
+                                        <h4>Personal Information</h4>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="firstName" class="form-label">First Name</label>
+                                                <input type="text" class="form-control" id="firstName" required>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="lastName" class="form-label">Last Name</label>
+                                                <input type="text" class="form-control" id="lastName" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="email" class="form-label">Email Address</label>
+                                                <input type="email" class="form-control" id="email" required>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="phone" class="form-label">Phone Number</label>
+                                                <input type="tel" class="form-control" id="phone" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Education -->
+                                    <div class="mb-4">
+                                        <h4>Education</h4>
+                                        <div class="mb-3">
+                                            <label for="education" class="form-label">Highest Educational Attainment</label>
+                                            <select class="form-select" id="education" required>
+                                                <option value="">Select Education Level</option>
+                                                <option>High School</option>
+                                                <option>Vocational/Technical</option>
+                                                <option>College</option>
+                                                <option>Post Graduate</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="course" class="form-label">Course/Program</label>
+                                            <input type="text" class="form-control" id="course">
+                                        </div>
+                                    </div>
+
+                                    <!-- Skills -->
+                                    <div class="mb-4">
+                                        <h4>Skills & Expertise</h4>
+                                        <div class="mb-3">
+                                            <label class="form-label">Technical Skills</label>
+                                            <div class="row">
+                                                <div class="col-md-4 mb-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="skill1">
+                                                        <label class="form-check-label" for="skill1">Programming</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="skill2">
+                                                        <label class="form-check-label" for="skill2">Data Analysis</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="skill3">
+                                                        <label class="form-check-label" for="skill3">Web Development</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="otherSkills" class="form-label">Other Skills</label>
+                                            <textarea class="form-control" id="otherSkills" rows="3" placeholder="List your additional skills..."></textarea>
+                                        </div>
+                                    </div>
+
+                                    <!-- Job Preferences -->
+                                    <div class="mb-4">
+                                        <h4>Job Preferences</h4>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="jobType" class="form-label">Preferred Job Type</label>
+                                                <select class="form-select" id="jobType" required>
+                                                    <option value="">Select Job Type</option>
+                                                    <option>Full-time</option>
+                                                    <option>Part-time</option>
+                                                    <option>Contract</option>
+                                                    <option>Internship</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="industry" class="form-label">Preferred Industry</label>
+                                                <select class="form-select" id="industry" required>
+                                                    <option value="">Select Industry</option>
+                                                    <option>IT & Technology</option>
+                                                    <option>Manufacturing</option>
+                                                    <option>Healthcare</option>
+                                                    <option>Education</option>
+                                                    <option>Service Industry</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="expectedSalary" class="form-label">Expected Salary Range</label>
+                                            <select class="form-select" id="expectedSalary">
+                                                <option value="">Select Salary Range</option>
+                                                <option>₱15,000 - ₱20,000</option>
+                                                <option>₱20,000 - ₱30,000</option>
+                                                <option>₱30,000 - ₱40,000</option>
+                                                <option>₱40,000 - ₱50,000</option>
+                                                <option>Above ₱50,000</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary btn-lg">Create Profile</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="col-lg-4">
+                        <!-- How it Works -->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="card-title">How Job Matching Works</h4>
+                                <ol class="list-unstyled">
+                                    <li class="mb-3">
+                                        <h5>1. Create Profile</h5>
+                                        <p>Fill in your details, skills, and preferences</p>
+                                    </li>
+                                    <li class="mb-3">
+                                        <h5>2. AI Matching</h5>
+                                        <p>Our system matches you with suitable job openings</p>
+                                    </li>
+                                    <li class="mb-3">
+                                        <h5>3. Get Notifications</h5>
+                                        <p>Receive alerts for matching job opportunities</p>
+                                    </li>
+                                    <li class="mb-3">
+                                        <h5>4. Apply Directly</h5>
+                                        <p>Apply to jobs with one click</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- Tips -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Profile Tips</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">✓ Be specific about your skills</li>
+                                    <li class="mb-2">✓ Keep your information updated</li>
+                                    <li class="mb-2">✓ Upload a professional resume</li>
+                                    <li class="mb-2">✓ Include relevant certifications</li>
+                                    <li class="mb-2">✓ Set realistic salary expectations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Us</h5>
+                    <p>Email: peso@cabuyao.gov.ph<br>
+                    Phone: (123) 456-7890</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2025 PESO Cabuyao. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
